@@ -183,7 +183,7 @@ def get_reticulum_summary(predictions, current_row):
         if any(get_detailed_alerts(row)):  # If any alert
             danger_count += 1
     if danger_count > 18:  # >50% timesteps have alerts
-        status = "Danger"
+        status = "Safe"
     elif danger_count > 6:  # >16%
         status = "Warning"
 
